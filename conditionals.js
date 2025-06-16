@@ -22,8 +22,12 @@ englishButton.addEventListener("click", function() {
     //  - The answer should be "Mon".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Correct!" in the ".english-message" div. 
     //  - If incorrect, display "Wrong! Try again."
-    
-
+    if(englishInput === "Mon"){
+        document.querySelector(".english-message").innerHTML = "Correct";
+    }
+    else{
+        document.querySelector(".english-message").innerHTML = "Wrong! Try agan.";
+    }
 
 
 });
@@ -36,6 +40,12 @@ mathButton.addEventListener("click", function() {
     //  - We need to write 'Number' before the grabbed value. 
     let mathInput = Number(document.querySelector(".math").value);
 
+    if(mathInput === 30){
+        document.querySelector(".math-message").innerHTML = "Correct";
+    }
+    else{
+        document.querySelector(".math-message").innerHTML = "Wrong! Try agan.";
+    }
     // 3. Write an if-else conditional statement.
     //  - Check if the value of the variable mathInput is correct.
     //  - The answer should be 30.
@@ -49,6 +59,12 @@ mathButton.addEventListener("click", function() {
 ssButton.addEventListener("click", function() {
     let ssInput = document.querySelector(".social-studies").value;
 
+    if(ssInput === 'Albany'){
+        document.querySelector(".ss-message").innerHTML = "Correct";
+    }
+    else{
+        document.querySelector(".ss-message").innerHTML = "Wrong! Try agan.";
+    }
     // 4. Write an if-else conditional statement.
     //  - Check if the value of the variable ssInput is correct.
     //  - The answer should be "Albany".
@@ -64,6 +80,13 @@ scienceButton.addEventListener("click", function() {
     // 5. Declare a variable that stores the value of the user input in the science section.
     //  - Look at previous lines of code to help you out.
 
+    let scienceInput = document.querySelector(".science").value;
+
+    if(scienceInput === 'solid'){
+        document.querySelector(".science-message").innerHTML = "Correct";
+    }
+    else{
+    }
 
     // 6. Write an if-else conditional statement.
     //  - Check if the value of the input variable is correct.
